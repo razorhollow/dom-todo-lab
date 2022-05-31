@@ -32,7 +32,6 @@ function addToDo() {
 }
 
 function reset() {
-  console.log("reset button pushed")
   //remove all items from list
   list.innerHTML = ''
   //clear the input field
