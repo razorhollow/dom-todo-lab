@@ -3,17 +3,38 @@
 
 
 /*-------------------------------- Variables --------------------------------*/
-
+let toDoList
 
 
 /*------------------------ Cached Element References ------------------------*/
 const input = document.querySelector('#to-do-input')
 const toDoButton = document.querySelector('#submit-button')
 const list = document.querySelector('#todo-list')
-
+const resetBtn = document.querySelector("#reset-button")
 /*----------------------------- Event Listeners -----------------------------*/
 
-
-
+toDoButton.addEventListener('click', addToDo)
+resetBtn.addEventListener('click', reset)
 /*-------------------------------- Functions --------------------------------*/
 
+
+
+function addToDo() {
+  let currentToDo = input.value
+  const li = document.createElement('li')
+  if (currentToDo !== ""){
+    li.textContent = currentToDo
+    list.appendChild(li)
+  } else {
+    console.log('woops, your to do is blank')
+  }
+    input.value = ''
+}
+
+function reset() {
+  console.log("reset button pushed")
+  //remove all items from list
+  list.innerHTML = ''
+  //clear the input field
+  input.value = ''
+}
