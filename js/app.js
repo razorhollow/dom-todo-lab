@@ -19,7 +19,8 @@ resetBtn.addEventListener('click', reset)
 
 
 
-function addToDo() {
+function addToDo(event) {
+  event.preventDefault()
   let currentToDo = input.value
   const li = document.createElement('li')
   if (currentToDo !== ""){
