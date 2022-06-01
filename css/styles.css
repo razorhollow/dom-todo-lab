@@ -1,0 +1,11 @@
+body {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+
+ul {
+  list-style: none;
+  font-weight: bold;
+  text-transform: capitalize;
+}
