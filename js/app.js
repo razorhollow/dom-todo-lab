@@ -15,6 +15,7 @@ const resetBtn = document.querySelector("#reset-button")
 
 toDoButton.addEventListener('click', addToDo)
 resetBtn.addEventListener('click', reset)
+list.addEventListener('click' , removeItem)
 /*-------------------------------- Functions --------------------------------*/
 
 
@@ -37,4 +38,8 @@ function reset() {
   list.innerHTML = ''
   //clear the input field
   input.value = ''
+}
+
+function removeItem(event) { //left off here
+
 }
