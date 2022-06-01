@@ -41,7 +41,6 @@ function reset() {
 }
 
 function removeItem(event) {
-  console.log('you clicked the li')
   event.target.remove() 
 
 }
