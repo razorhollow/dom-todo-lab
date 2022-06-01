@@ -40,6 +40,8 @@ function reset() {
   input.value = ''
 }
 
-function removeItem(event) { //left off here
+function removeItem(event) {
+  console.log('you clicked the li')
+  event.target.remove() 
 
 }
